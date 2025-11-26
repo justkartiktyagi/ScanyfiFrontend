@@ -89,7 +89,13 @@ export default function Onboarding() {
                 onChange={(e) => setName(e.target.value)}
                 className="w-full bg-gray-700 px-4 py-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
               />
-
+              <input
+                type="email"
+                placeholder="Email"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full bg-gray-700 px-4 py-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
+              />
               <input
                 type="text"
                 placeholder="Center Name"
@@ -187,8 +193,8 @@ export default function Onboarding() {
           /* LOGIN AS CENTER FORM */
           <form onSubmit={handleCenterLogin} className="flex flex-col gap-4">
             <input
-              type="email"
-              placeholder="Center Email"
+              type="text"
+              placeholder="Email/Mobile No"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full bg-gray-700 px-4 py-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"

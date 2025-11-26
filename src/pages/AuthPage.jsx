@@ -38,8 +38,8 @@ export default function AuthPage() {
           // ---------------- LOGIN ----------------
           <form className="flex flex-col gap-4">
             <input
-              type="email"
-              placeholder="Email"
+              type="text"
+              placeholder="Email/Mobile No"
               className="w-full bg-gray-700 px-4 py-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
             />
 
