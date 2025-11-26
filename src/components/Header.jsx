@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -31,10 +32,11 @@ export default function Header() {
       </nav>
 
       {/* Login Button Desktop */}
-      <button className="hidden md:block bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold">
-        Login
-      </button>
-
+      <Link to="/auth">
+        <button className="hidden md:block bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold">
+          Login
+        </button>
+      </Link>
       {/* Mobile Menu Icon */}
       <button className="md:hidden" onClick={() => setOpen(!open)}>
         {open ? <X /> : <Menu />}
@@ -78,13 +80,14 @@ export default function Header() {
           >
             Contact Us
           </a>
-
-          <button
-            className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold w-full text-center"
-            onClick={() => setOpen(false)}
-          >
-            Login
-          </button>
+          <Link to="/auth">
+            <button
+              className="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold w-full text-center"
+              onClick={() => setOpen(false)}
+            >
+              Login
+            </button>
+          </Link>
         </div>
       )}
     </header>

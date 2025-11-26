@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -43,12 +44,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href="/onboard-center"
+              <Link
+                to="/onboard"
                 className="hover:text-yellow-500 font-semibold"
               >
                 Onboard a New Center
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -58,10 +59,10 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
           <ul className="space-y-4 text-sm">
             <li className="flex items-center gap-3">
-              <Phone size={18} /> +91 9876543210
+              <Phone size={18} /> +91 9779539608
             </li>
             <li className="flex items-center gap-3">
-              <Mail size={18} /> support@scanyfi.com
+              <Mail size={18} /> scanyfi@gmail.com
             </li>
           </ul>
         </div>
@@ -75,6 +76,12 @@ export default function Footer() {
             </a>
             <a href="#" className="hover:text-yellow-500">
               <Instagram size={22} />
+            </a>
+            <a href="#" className="hover:text-yellow-500">
+              <Phone size={22} />
+            </a>
+            <a href="#" className="hover:text-yellow-500">
+              <Mail size={22} />
             </a>
           </div>
         </div>
