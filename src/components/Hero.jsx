@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const images = ["/hero/2.jpg", "/hero/3.jpg", "/hero/1.jpg"];
 
 export default function Hero() {
@@ -26,9 +26,11 @@ export default function Hero() {
         <h1 className="text-white text-4xl md:text-6xl font-bold">
           Book MRI, CT Scan, X-Ray Online
         </h1>
-        <button className="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl text-lg transition-all">
-          Book a Scan
-        </button>
+        <Link to="/booking">
+          <button className="mt-6 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl text-lg transition-all">
+            Book a Scan
+          </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-// src/components/Centers.jsx
+import { Link } from "react-router-dom";
 
 const centers = [
   {
@@ -34,10 +34,11 @@ export default function Centers() {
             <h3 className="text-xl font-semibold">{center.name}</h3>
             <p className="text-gray-600">Distance: {center.distance}</p>
             <p className="text-yellow-600 font-bold">⭐ {center.rating}</p>
-
-            <button className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-lg transition-all">
-              Book Now
-            </button>
+            <Link to="/booking">
+              <button className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-lg transition-all">
+                Book Now
+              </button>
+            </Link>
           </div>
         ))}
       </div>

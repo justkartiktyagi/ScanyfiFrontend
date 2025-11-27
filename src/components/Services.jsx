@@ -1,5 +1,3 @@
-// src/components/Services.jsx
-
 const services = [
   {
     title: "MRI Scan",

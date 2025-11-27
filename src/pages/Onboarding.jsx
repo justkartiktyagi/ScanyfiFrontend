@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 export default function Onboarding() {
   const [isSignup, setIsSignup] = useState(true);
   const [name, setName] = useState("");
@@ -208,12 +208,14 @@ export default function Onboarding() {
               className="w-full bg-gray-700 px-4 py-3 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400"
             />
             {/* Login Button */}
-            <button
-              type="submit"
-              className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg"
-            >
-              Login as Center
-            </button>
+            <Link to="/dashboard">
+              <button
+                type="submit"
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg"
+              >
+                Login as Center
+              </button>
+            </Link>
           </form>
         )}
       </div>
