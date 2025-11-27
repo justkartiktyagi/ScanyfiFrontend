@@ -10,6 +10,8 @@ import Bookings from "./pages/dashboard/Bookings.jsx";
 import CalendarPage from "./pages/dashboard/CalendarPage.jsx";
 import Analytics from "./pages/dashboard/Analytics.jsx";
 import Profile from "./pages/dashboard/Profile.jsx";
+import PatientBookings from "./pages/PatientBookings.jsx";
+import PatientReports from "./pages/PatientReports.jsx";
 import { Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/onboard" element={<Onboarding />} />
       <Route path="/booking" element={((<Header />), (<BookingPage />))} />
+      <Route path="/patient/bookings" element={<PatientBookings />} />
+      <Route path="/patient/reports" element={<PatientReports />} />
       <Route path="/dashboard" element={<DashboardLayout />}>
         <Route index element={<Overview />} />
         <Route path="bookings" element={<Bookings />} />

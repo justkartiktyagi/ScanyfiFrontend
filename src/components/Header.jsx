@@ -20,12 +20,12 @@ export default function Header() {
         <a href="#services" className="hover:text-yellow-400">
           Services
         </a>
-        <a href="#reports" className="hover:text-yellow-400">
+        <Link to="/patient/reports" className="hover:text-yellow-400">
           Reports
-        </a>
-        <a href="#bookings" className="hover:text-yellow-400">
+        </Link>
+        <Link to="/patient/bookings" className="hover:text-yellow-400">
           Bookings
-        </a>
+        </Link>
         <a href="#contact" className="hover:text-yellow-400">
           Contact Us
         </a>
