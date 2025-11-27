@@ -20,7 +20,7 @@ function App() {
       <Route path="/booking" element={((<Header />), (<BookingPage />))} />
       <Route path="/dashboard" element={<DashboardLayout />}>
         <Route index element={<Overview />} />
-        <Route path="booking" element={<Bookings />} />
+        <Route path="bookings" element={<Bookings />} />
         <Route path="calendar" element={<CalendarPage />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="profile" element={<Profile />} />
